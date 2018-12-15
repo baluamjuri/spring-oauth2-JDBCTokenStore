@@ -1,0 +1,19 @@
+server:
+  port: 8881
+  servlet:
+    context-path: /auth
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/cloud_security
+    username: root
+    password: tiger
+  jpa:    
+    hibernate:
+      ddl-auto: validate
+    properties:
+      hibernate:
+        current_session_context_class: org.springframework.orm.hibernate5.SpringSessionContext
+        show_sql: true
+        use_sql_comments: true
+        format_sql: true
